@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos globais baseados no padrão visual da Seusdados */
+:root {
+  --primary-blue: #1a237e;
+  --primary-purple: #6a1b9a;
+  --dark-purple: #4a148c;
+  --text-primary: #333333;
+  --text-secondary: #5a647e;
+  --text-light: #666666;
+  --background-light: #f7f8fc;
+  --background-neutral: #f5f5fa;
+  --border-light: #e0e4e8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Estilos da apresentação */
+.slide {
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Card styles seguindo o padrão */
+.card {
+  background-color: var(--background-light);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 200px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--primary-purple), var(--primary-blue));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.card-value {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--primary-blue);
+}
+
+/* Botão CTA */
+.cta-button {
+  padding: 18px 35px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background: linear-gradient(90deg, var(--primary-purple) 0%, var(--dark-purple) 100%);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(106, 27, 154, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(106, 27, 154, 0.4);
+}
+
+/* Estatísticas */
+.stat-item {
+  padding: 12px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-fadeIn-delayed {
+  animation: fadeIn 1s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-purple);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-purple);
+}
+
+/* Estilos para inputs */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-purple) !important;
+  box-shadow: 0 0 0 3px rgba(106, 27, 154, 0.1);
+}
+
+/* Estilos para file upload */
+input[type="file"] {
+  display: none;
+}
+
+/* Loading spinner */
+.spinner {
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid var(--primary-purple);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .slide {
+    transform: scale(0.5);
+    transform-origin: top left;
+  }
+  
+  .card {
+    min-height: auto;
+    padding: 16px;
+  }
+  
+  .cta-button {
+    padding: 14px 24px;
+    font-size: 16px;
+  }
+}
+
+/* Utilitários para acessibilidade */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Estados de foco para acessibilidade */
+button:focus,
+a:focus {
+  outline: 2px solid var(--primary-purple);
+  outline-offset: 2px;
+}
+
+/* Estilos para modo escuro (futuro) */
+@media (prefers-color-scheme: dark) {
+  /* Preparado para implementação futura de modo escuro */
+}
