@@ -1,0 +1,64 @@
+{
+  "name": "Questionário de Teste - Importação",
+  "description": "Este é um questionário de teste para verificar se a importação está funcionando corretamente",
+  "category": "teste",
+  "sections": [
+    {
+      "name": "Informações Básicas",
+      "description": "Colete informações básicas do respondente",
+      "questions": [
+        {
+          "text": "Qual é o seu nome completo?",
+          "type": "text",
+          "required": true,
+          "help_text": "Digite seu nome completo"
+        },
+        {
+          "text": "Qual é a sua idade?",
+          "type": "number",
+          "required": true,
+          "help_text": "Digite sua idade em anos"
+        },
+        {
+          "text": "Qual é o seu nível de escolaridade?",
+          "type": "single_choice",
+          "required": true,
+          "options": [
+            "Ensino Fundamental",
+            "Ensino Médio",
+            "Ensino Superior",
+            "Pós-graduação",
+            "Mestrado",
+            "Doutorado"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Avaliação de Satisfação",
+      "description": "Avalie sua experiência",
+      "questions": [
+        {
+          "text": "Como você avalia nosso atendimento?",
+          "type": "scale",
+          "required": true,
+          "min_value": 1,
+          "max_value": 10,
+          "min_label": "Muito ruim",
+          "max_label": "Excelente"
+        },
+        {
+          "text": "Você recomendaria nossos serviços?",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "text": "Deixe aqui seus comentários ou sugestões:",
+          "type": "textarea",
+          "required": false,
+          "help_text": "Seus comentários são muito importantes para nós"
+        }
+      ]
+    }
+  ]
+}

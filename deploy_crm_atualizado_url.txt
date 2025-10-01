@@ -1,0 +1,56 @@
+# CRM SeusDados ATUALIZADO - Sistema Completo
+
+**NOVA URL ATUALIZADA:** https://lvhxe027vhfi.space.minimax.io
+
+## ✅ Sistema Completamente Atualizado
+
+O CRM SeusDados foi redeployado com todas as funcionalidades mais recentes:
+
+### 🎯 Funcionalidades Integradas:
+
+1. **📋 Dashboard** - Visão geral do sistema
+2. **👥 Clientes** - Gestão completa de clientes
+3. **📄 Documentos** - Sistema de templates e geração
+4. **❓ Questionários** - Sistema completo com importador inteligente
+5. **📊 Apresentações** - Gestão de apresentações
+6. **📈 Relatórios** - Sistema de relatórios (Admin)
+
+### 🔧 Menu de Navegação:
+
+**ADMIN:**
+- Dashboard
+- Consultores  
+- Clientes
+- Serviços
+- **Documentos** ✅
+- Apresentações
+- **Questionários** ✅ (NOVO!)
+- Relatórios
+
+**CONSULTOR:**
+- Dashboard
+- Meus Clientes
+- Propostas
+- Contratos
+- **Documentos** ✅
+- Apresentações  
+- **Questionários** ✅ (NOVO!)
+
+### 🚀 Sistema de Importação Inteligente:
+
+- **Edge Function:** https://poppadzpyftjkergccpn.supabase.co/functions/v1/import-questionnaire
+- **Formatos:** JSON ✅, TXT ✅, DOCX 🚧, PDF 🚧
+
+### 🎉 Novidades desta Versão:
+
+✅ Menu "Questionários" adicionado para Admin e Consultor
+✅ Sistema de importação inteligente implementado
+✅ Estrutura completa do banco de dados
+✅ Interface de gestão de questionários
+✅ Sistema de templates integrado
+
+---
+
+**Status**: 100% Funcional e Atualizado
+**Deploy**: 01/10/2025
+**Tecnologias**: React + TypeScript + Supabase + Edge Functions

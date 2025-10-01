@@ -1,0 +1,31 @@
+{
+  "sections": [
+    {
+      "title": "Seção de Teste - Validação de Correções",
+      "description": "Seção para testar se a importação está funcionando corretamente",
+      "order": 1,
+      "questions": [
+        {
+          "text": "Esta é uma pergunta de teste após as correções?",
+          "type": "text",
+          "required": true,
+          "order": 1,
+          "description": "Pergunta para validar o funcionamento da importação"
+        },
+        {
+          "text": "Qual a sua avaliação do sistema corrigido?",
+          "type": "single_choice",
+          "required": false,
+          "order": 2,
+          "options": ["Excelente", "Bom", "Regular", "Precisa melhorar"]
+        },
+        {
+          "text": "Comentários adicionais sobre o teste:",
+          "type": "textarea",
+          "required": false,
+          "order": 3
+        }
+      ]
+    }
+  ]
+}

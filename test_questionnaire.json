@@ -1,0 +1,23 @@
+{
+  "name": "Teste de Questionário",
+  "description": "Questionário de teste para debug",
+  "category": "teste",
+  "sections": [
+    {
+      "name": "Seção 1",
+      "description": "Primeira seção de teste",
+      "questions": [
+        {
+          "text": "Qual é seu nome?",
+          "type": "text",
+          "required": true
+        },
+        {
+          "text": "Qual sua idade?",
+          "type": "number", 
+          "required": true
+        }
+      ]
+    }
+  ]
+}

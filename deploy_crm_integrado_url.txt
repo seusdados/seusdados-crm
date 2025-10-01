@@ -1,0 +1,42 @@
+# CRM SeusDados com Sistema de Templates Integrado
+
+**URL do CRM Integrado:** https://9n2i380ws2rb.space.minimax.io
+
+## Sistema Integrado
+
+O CRM SeusDados agora possui o sistema completo de templates de documentos integrado:
+
+### Funcionalidades Integradas:
+
+1. **Menu "Documentos"** - Novo item de navegação
+2. **Gerenciar Templates** - Interface completa para CRUD de templates
+3. **Gerar Documentos** - Processo guiado para criação de documentos
+4. **Histórico** - Visualização de todos os documentos gerados
+
+### Fluxo Integrado:
+
+1. **A partir de Clientes**: Botão "Gerar Documento" ao lado de cada cliente
+2. **Seleção Automática**: Cliente pré-selecionado no gerador
+3. **Templates Dinâmicos**: Campos {{}} detectados automaticamente
+4. **Mapeamento Inteligente**: Dados do cliente preenchem automaticamente
+5. **Geração Completa**: Documento final com código de verificação
+
+### Templates Disponíveis:
+
+- **Minuta de contrato de prestação de serviços** (39 campos)
+- **Contrato de Prestação de Serviços - LGPD**
+- **Proposta Comercial - LGPD**
+
+### Edge Functions Integradas:
+
+- template-manager (CRUD)
+- field-detector (Auto-detecção)
+- template-processor (Processamento)
+- document-generator (Geração)
+- document-history (Histórico)
+
+---
+
+**Status**: Sistema 100% funcional e integrado
+**Deploy**: 30/09/2025
+**Tecnologias**: React + TypeScript + Supabase + Edge Functions
