@@ -1,0 +1,35 @@
+{
+  "name": "Questionário de Teste - Importação Corrigida",
+  "description": "Teste do sistema de importação após correções",
+  "category": "teste",
+  "sections": [
+    {
+      "name": "Informações Básicas",
+      "description": "Dados preliminares",
+      "questions": [
+        {
+          "text": "Qual o seu nome?",
+          "type": "text",
+          "required": true
+        },
+        {
+          "text": "Qual a sua idade?",
+          "type": "number",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "Avaliação",
+      "description": "Questões de avaliação",
+      "questions": [
+        {
+          "text": "Como você avalia nosso serviço?",
+          "type": "single_choice",
+          "options": ["Excelente", "Bom", "Regular", "Ruim"],
+          "required": true
+        }
+      ]
+    }
+  ]
+}
