@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Template de Exemplo - Contrato</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            margin: 40px; 
+            color: #333; 
+        }
+        h1 { 
+            color: #2c5aa0; 
+            border-bottom: 2px solid #2c5aa0; 
+            padding-bottom: 10px; 
+        }
+        h2 { 
+            color: #2c5aa0; 
+            margin-top: 30px; 
+        }
+        .contrato-info { 
+            background: #f8f9fa; 
+            padding: 20px; 
+            border-left: 4px solid #2c5aa0; 
+            margin: 20px 0; 
+        }
+        .valor-destaque { 
+            background: #fff3cd; 
+            padding: 10px; 
+            border: 1px solid #ffeaa7; 
+            border-radius: 5px; 
+            font-weight: bold; 
+        }
+        .assinatura { 
+            margin-top: 50px; 
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <h1>CONTRATO DE PRESTAÇÃO DE SERVIÇOS</h1>
+    
+    <div class="contrato-info">
+        <p><strong>Contrato nº:</strong> {{contrato_numero}}</p>
+        <p><strong>Data de Assinatura:</strong> {{data_assinatura}}</p>
+        <p><strong>Código de Verificação:</strong> {{codigo_verificacao}}</p>
+    </div>
+
+    <h2>CONTRATANTE</h2>
+    <p><strong>Razão Social:</strong> {{contratante_nome}}<br>
+    <strong>CNPJ:</strong> {{contratante_cnpj}}<br>
+    <strong>Endereço:</strong> {{contratante_endereco}}<br>
+    <strong>CEP:</strong> {{contratante_cep}} - {{contratante_cidade}}<br>
+    <strong>E-mail:</strong> {{contratante_email}}<br>
+    <strong>Telefone:</strong> {{contratante_telefone}}</p>
+
+    <h2>CONTRATADA</h2>
+    <p><strong>Razão Social:</strong> {{contratada_nome}}<br>
+    <strong>CNPJ:</strong> {{contratada_cnpj}}<br>
+    <strong>Endereço:</strong> {{contratada_endereco}}<br>
+    <strong>CEP:</strong> {{contratada_cep}} - {{contratada_cidade}}</p>
+
+    <h2>VIGÊNCIA DO CONTRATO</h2>
+    <p>O presente contrato terá vigência de {{vigencia_inicio}} a {{vigencia_fim}}, 
+    totalizando {{vigencia_duracao}} de duração.</p>
+
+    <h2>VALORES</h2>
+    <div class="valor-destaque">
+        <p><strong>Valor do Setup:</strong> {{valor_setup}}<br>
+        <strong>Por extenso:</strong> {{valor_setup_extenso}}</p>
+    </div>
+
+    <div class="valor-destaque">
+        <p><strong>Valor Mensal:</strong> {{valor_mensal}}<br>
+        <strong>Por extenso:</strong> {{valor_mensal_extenso}}<br>
+        Vencimento todo dia {{dia_vencimento}} do mês</p>
+    </div>
+
+    <h2>CLÁUSULAS GERAIS</h2>
+    <p>As mensalidades serão automaticamente reajustadas a cada 12 (doze) meses pelo IPCA-E.</p>
+    <p>A impontualidade sujeitará à multa de 2% sobre o valor devido, 
+    além de juros de mora de 1% a.m., com correção monetária pelo IPCA-E.</p>
+
+    <div class="assinatura">
+        <p>{{contratante_cidade}}, {{data_assinatura}}</p>
+        <br><br>
+        <p>_________________________________<br>
+        {{contratante_nome}}<br>
+        CONTRATANTE</p>
+        <br><br>
+        <p>_________________________________<br>
+        {{contratada_nome}}<br>
+        CONTRATADA</p>
+    </div>
+</body>
+</html>
